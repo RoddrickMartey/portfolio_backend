@@ -9,6 +9,8 @@ const app = express();
 const VISITORURL = process.env.VISITORURL;
 const ADMINURL = process.env.ADMINURL;
 
+console.log(VISITORURL);
+
 // CORS configuration
 const corsOptions = {
   origin: [VISITORURL, ADMINURL], // Your frontend URL
