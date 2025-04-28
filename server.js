@@ -4,6 +4,10 @@ import cors from "cors"; // Import the CORS package
 import userRouter from "./routes/userRoute.js";
 import visitorRouter from "./routes/visitorRoute.js";
 
+import dotenv from "dotenv";
+
+dotenv.config();
+
 const app = express();
 
 const VISITORURL = process.env.VISITORURL;
